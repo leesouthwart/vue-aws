@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <header-component />
+  <answers-list-component />
+  <footer-component />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from './components/Header/HeaderComponent.vue'
+import AnswersListComponent from "@/components/AnswersList/AnswersListComponent.vue";
+import FooterComponent from "@/components/Footer/FooterComponent.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AnswersListComponent,
+    HeaderComponent,
+    FooterComponent
   }
 }
 </script>
@@ -19,8 +24,12 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #F8F8F9;
 }
 </style>
