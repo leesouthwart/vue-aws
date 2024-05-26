@@ -10,15 +10,9 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+PLEASE NOTE the AWS JSON file is configured to allow access to the following url:
+http://localhost:8080/
+
+Any other domains will have access denied and no data will load.
